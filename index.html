@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Carrito</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestion de carrito de compras</h1>
+    </header>
+    <main>
+        <form id="carrito-form">
+            <fieldset>
+                <legend>Carrito</legend>
+                <label>ingrese el producto</label>
+                <input id="nombre-producto" type="text" placeholder="nombre producto">
+                <input id="cantidad-producto" type="text" placeholder="cantidad producto">
+                <input id="precio-producto" type="text" placeholder="precio producto">
+                <button type="button" id="carrito-button">Agregar producto</button>
+            </fieldset>
+        </form>
+        <div id="lista-div">
+            <ul id="lista-ul"></ul>
+        </div>
+        <div id="total-carrito">Total = $0</div>
+    </main>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
