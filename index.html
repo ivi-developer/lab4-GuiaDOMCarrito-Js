@@ -20,12 +20,23 @@
                 <input id="cantidad-producto" type="text" placeholder="cantidad producto">
                 <input id="precio-producto" type="text" placeholder="precio producto">
                 <button type="button" id="carrito-button">Agregar producto</button>
+                <button type="button" id="borrar-carrito-button">Borrar carrito</button>
             </fieldset>
         </form>
         <div id="lista-div">
             <ul id="lista-ul"></ul>
         </div>
         <div id="total-carrito">Total = $0</div>
+        <form id="busqueda-form">
+            <fieldset>
+                <legend>Busqueda</legend>
+                <label for="busqueda-input">Producto</label>
+                <input type="text" id="busqueda-input" placeholder="Ingrese el nombre del producto">
+                <button type="button" id="busqueda-button">Buscar producto</button>
+                <button type="button" id="borrar-busqueda-button">Borrar busqueda</button>
+            </fieldset>
+        </form>
+        <div id="busqueda-div"></div>
     </main>
     <script type="module" src="./script.js"></script>
 </body>

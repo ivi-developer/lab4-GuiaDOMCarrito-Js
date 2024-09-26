@@ -1,4 +1,4 @@
-import { Producto } from '../classes/producto.js'
+import { Producto } from '../../classes/producto.js'
 import { total } from './totalHandler.js'
 import { ulHandler } from './ulHandler.js'
 export const inputHandler = (idNombre, idCantidad, idPrecio, idUl) => {
