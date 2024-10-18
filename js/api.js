@@ -1,5 +1,5 @@
-const urlBase = "http://localhost:3000/prodcutos"
-export const getTareas = async () => {
+const urlBase = "http://localhost:3000/productos"
+export const getProductos = async () => {
     try {
         const response = await fetch(urlBase)
         if (!response.ok) throw new Error("Error en la respuesta", response.status)
@@ -10,7 +10,7 @@ export const getTareas = async () => {
         throw e
     }
 }
-export const postTarea = async (producto) => {
+export const postProducto = async (producto) => {
     try {
         const response = await fetch(urlBase, {
             method: 'POST',
@@ -20,12 +20,12 @@ export const postTarea = async (producto) => {
         if (!response.ok) throw new Error("Error al cargar dato", response.status);
         return await response.json()
     } catch (error) {
-        if (error instanceof TypeError) console.log('Error en la red', e``)
-        else console.log('Error al obtener datos', e)
-        throw e
+        if (error instanceof TypeError) console.log('Error en la red', error)
+        else console.log('Error al obtener datos', error)
+        throw error
     }
 }
-export const deleteTarea = async (id) => {
+export const deleteProducto = async (id) => {
     try {
         const response = await fetch(`${urlBase}/${id}`, {
             method: 'DELETE',
@@ -38,7 +38,7 @@ export const deleteTarea = async (id) => {
         throw error
     }
 }
-export const getTarea = async (id) => {
+export const getProductoById = async (id) => {
     try {
         const response = await fetch(`${urlBase}/${id}`, {
             method: 'GET'
@@ -53,7 +53,7 @@ export const getTarea = async (id) => {
 
     }
 }
-export const putTarea = async (id, producto) => {
+export const putProducto = async (id, producto) => {
     try {
         const response = await fetch(`${urlBase}/${id}`, {
             method: 'PUT',

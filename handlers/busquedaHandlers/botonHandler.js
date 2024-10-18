@@ -1,13 +1,13 @@
 import { inputBusqueda } from "./inputHandler.js"
 
-export const buttonHandlerBusqueda = (idButton, idDiv) => {
+export const buttonHandlerBusqueda = (idButton, lista, idDiv) => {
     const button = document.getElementById(idButton)
     button.addEventListener('click', () => {
-        limpiartDiv(idDiv)
-        inputBusqueda('busqueda-input')
+        limpiarDiv(idDiv)
+        inputBusqueda('busqueda-input', lista, idDiv)
     })
 }
-const limpiartDiv = idDiv => {
+const limpiarDiv = idDiv => {
     const div = document.getElementById(idDiv)
     div.innerHTML = ''//limpia todo los hijos
 }

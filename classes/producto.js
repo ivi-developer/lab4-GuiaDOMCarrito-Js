@@ -3,5 +3,6 @@ export class Producto {
         this.nombre = nombre
         this.cantidad = cantidad
         this.precio = precio
+        this.subtotal = precio * cantidad
     }
 }

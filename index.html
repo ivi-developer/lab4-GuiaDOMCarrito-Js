@@ -16,11 +16,10 @@
             <fieldset>
                 <legend>Carrito</legend>
                 <label>ingrese el producto</label>
-                <input id="nombre-producto" type="text" placeholder="nombre producto">
-                <input id="cantidad-producto" type="text" placeholder="cantidad producto">
-                <input id="precio-producto" type="text" placeholder="precio producto">
-                <button type="button" id="carrito-button">Agregar producto</button>
-                <button type="button" id="borrar-carrito-button">Borrar carrito</button>
+                <input id="nombre-producto" type="text" placeholder="nombre producto" required>
+                <input id="cantidad-producto" type="text" placeholder="cantidad producto" required>
+                <input id="precio-producto" type="text" placeholder="precio producto" required>
+                <button type="submit" id="carrito-button">Agregar producto</button>
             </fieldset>
         </form>
         <div id="lista-div">
@@ -38,7 +37,7 @@
         </form>
         <div id="busqueda-div"></div>
     </main>
-    <script type="module" src="./script.js"></script>
+    <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

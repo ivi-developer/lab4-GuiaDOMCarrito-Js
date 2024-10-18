@@ -1,3 +1,18 @@
 {
-    "prodcutos": []
+  "productos": [
+    {
+      "id": "b0d6",
+      "nombre": "pitusas",
+      "cantidad": "2",
+      "precio": "750",
+      "subtotal": 1500
+    },
+    {
+      "id": "5a7d",
+      "nombre": "chisito",
+      "cantidad": "2",
+      "precio": "1000",
+      "subtotal": 2000
+    }
+  ]
 }
